@@ -1,0 +1,11 @@
+@import "mixins";
+
+.card {
+  @include card(true);
+}
+
+@media all and (max-width: 1150px) {
+  .card {
+    min-height: 500px;
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--very-light-grayish-blue);
+  background-image: url("../public/assets/bg-bottom.svg"),
+    url("../public/assets/bg-top.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right top;
+}
+
+.container__cardsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 1150px) {
+  .container {
+    min-height: 200vh;
+  }
+
+  .container__cardsection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
